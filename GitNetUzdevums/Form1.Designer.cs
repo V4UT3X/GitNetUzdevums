@@ -32,8 +32,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.GroupBoxNJakobsons = new System.Windows.Forms.GroupBox();
+            this.ButtonNJakobsons = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.GroupBoxNJakobsons.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -75,17 +78,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Andrejs Liepiņš";
             // 
+            // GroupBoxNJakobsons
+            // 
+            this.GroupBoxNJakobsons.Controls.Add(this.ButtonNJakobsons);
+            this.GroupBoxNJakobsons.Location = new System.Drawing.Point(131, 161);
+            this.GroupBoxNJakobsons.Name = "GroupBoxNJakobsons";
+            this.GroupBoxNJakobsons.Size = new System.Drawing.Size(200, 100);
+            this.GroupBoxNJakobsons.TabIndex = 4;
+            this.GroupBoxNJakobsons.TabStop = false;
+            this.GroupBoxNJakobsons.Text = "Norlands Jākobsons";
+            // 
+            // ButtonNJakobsons
+            // 
+            this.ButtonNJakobsons.Location = new System.Drawing.Point(7, 20);
+            this.ButtonNJakobsons.Name = "ButtonNJakobsons";
+            this.ButtonNJakobsons.Size = new System.Drawing.Size(75, 23);
+            this.ButtonNJakobsons.TabIndex = 0;
+            this.ButtonNJakobsons.Text = "y=x+2";
+            this.ButtonNJakobsons.UseVisualStyleBackColor = true;
+            this.ButtonNJakobsons.Click += new System.EventHandler(this.ButtonNJakobsons_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 415);
+            this.Controls.Add(this.GroupBoxNJakobsons);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Funkciju grafiki";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.GroupBoxNJakobsons.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -96,6 +121,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox GroupBoxNJakobsons;
+        private System.Windows.Forms.Button ButtonNJakobsons;
     }
 }
 
